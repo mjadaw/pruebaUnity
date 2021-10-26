@@ -326,7 +326,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -371,6 +371,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movHor: 0
+  speed: 5
+  isMoving: 0
+  jumpForce: 7
+  isGrounded: 0
+  radius: 0.3
+  groundRayDist: 0.7
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1850275776
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +391,7 @@ GameObject:
   - component: {fileID: 1850275778}
   - component: {fileID: 1850275777}
   - component: {fileID: 1850275779}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
